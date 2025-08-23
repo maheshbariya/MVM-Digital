@@ -33,7 +33,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff; /* The default color of the main navmenu links */
+  --nav-color: #14201c; /* The default color of the main navmenu links */
   --nav-hover-color: #3063b6; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -154,6 +154,8 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   background-color: var(--background-color);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
 .header .topbar {
@@ -206,6 +208,7 @@ h6 {
 .header .branding {
   min-height: 60px;
   padding: 10px 0;
+  background-color: #fff;
 }
 
 .header .logo {
@@ -1383,7 +1386,7 @@ section,
   display: flex;
   align-items: center;
   overflow: hidden;
-  padding: 190px 0 60px 0;
+  padding: 120px 0 60px 0;
 }
 
 .hero .hero-background {
@@ -1413,6 +1416,7 @@ section,
     color-mix(in srgb, var(--background-color), transparent 25%) 0%,
     color-mix(in srgb, var(--background-color), transparent 10%) 500%
   );
+  opacity: 0.5;
 }
 
 .hero .container {
@@ -1528,6 +1532,15 @@ section,
 
 .hero .hero-visual {
   position: relative;
+}
+
+.hero .hero-visual img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); */
 }
 
 .hero .feature-card {
@@ -1967,16 +1980,17 @@ section,
 
 .featured-services .services-image {
   position: relative;
-  height: 380px;
+  height: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .featured-services .services-image img {
   position: relative;
   z-index: 2;
   max-height: 100%;
-  object-fit: cover;
+  /* width: 100%; */
+  /* object-fit: cover;/ */
 }
 
 .featured-services .services-image .shape-circle {
