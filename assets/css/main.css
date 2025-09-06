@@ -1096,6 +1096,34 @@ h6 {
   font-size: 14px;
   font-family: var(--heading-font);
 }
+.footer .social-links a {
+  font-size: 24px; /* icon size */
+  margin-right: 12px;
+}
+
+.footer .social-links a i {
+  color: #fff;
+}
+
+.footer .social-links a.facebook {
+  background-color: #1877f2; /* Facebook blue */
+}
+
+.footer .social-links a.instagram {
+  background-color: #e4405f; /* Instagram pink */
+}
+
+.footer .social-links a.linkedin {
+  background-color: #0a66c2; /* LinkedIn blue */
+}
+
+.footer .social-links a.x {
+  background-color: #000000; /* X (Twitter) black */
+}
+
+.footer .social-links a.youtube {
+  background-color: #ff0000; /* YouTube red */
+}
 
 .footer .social-links a {
   display: flex;
@@ -3702,6 +3730,21 @@ section,
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
+.testimonial-title h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--heading-color);
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.testimonial-title h3 {
+  font-size: 1.2rem;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  line-height: 1.6;
+  font-weight: 400;
+}
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -4096,6 +4139,7 @@ section,
   gap: 30px;
   display: flex;
   flex-direction: column-reverse;
+  font-size: 18px;
 }
 
 @media (min-width: 992px) {
@@ -4185,7 +4229,7 @@ section,
 }
 
 .contact .contact-card .contact-text p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   color: var(--default-color);
   margin-bottom: 0;
@@ -4219,7 +4263,7 @@ section,
 }
 
 .contact .contact-form-container > p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.6;
   margin-bottom: 25px;
   color: var(--default-color);
@@ -5856,4 +5900,24 @@ section,
   font-size: 1rem;
   color: #0d6efd;
   margin-right: 8px;
+}
+.whatsapp-logo {
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  z-index: 9999;
+}
+
+.whatsapp-logo .whatsapp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366; /* WhatsApp green */
+  color: #fff;
+  font-size: 28px; /* icon size */
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
